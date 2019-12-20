@@ -3,11 +3,12 @@
 }
 
 nav {
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #222831;
+  background-color: #3C3C3C;
 }
 
 .nav-links {
@@ -16,4 +17,39 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.form-style {
+  width: 100%;
+  padding: 1vh;
+  z-index: 1;
+
+}
+
+.main-div-style-innovate {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: yellow;
+
+}
+
+.arm-open-div h3 {
+  padding-top: 4rem;
+}
+
+.innovate-div-bg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(188, 216, 228, 1) 100%, rgba(33, 125, 167, 1) 100%);
+}
+
+.form-style {
+  margin-left: 2rem;
+  padding-top: 2rem;
+
 }

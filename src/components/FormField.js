@@ -1,7 +1,8 @@
 import React from 'react';
-import { Formik, Field, Form, useField } from "formik"
-import { TextField, Button, Checkbox, FormControl, Radio, FormControlLabel, RadioGroup } from "@material-ui/core"
-import Innovate from './Innovate';
+import { Formik, Field, Form } from "formik"
+import { Button, Checkbox, FormControl, Radio, FormControlLabel, RadioGroup } from "@material-ui/core"
+
+
 
 
 const FormField = () => {
@@ -17,13 +18,13 @@ const FormField = () => {
     }
     return (
         <div className="form-container">
-            <Innovate />
+
             <Formik initialValues={{ firstName: '', lastName: '', email: '', phoneNumber: '', canCall: false }} onSubmit={(data, { resetForm }) => {
                 console.log(data)
                 resetForm();
             }}>
                 {({ values, handleChange, handleBlur, handleSubmit }) => (
-                    <Form className="">
+                    <Form className="form-style">
                         <div>
                             <Field
                                 placeholder="First Name"

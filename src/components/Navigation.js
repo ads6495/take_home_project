@@ -12,10 +12,10 @@ const Navigation = () => {
                 <Link style={navStyle} to='/'>
                     <li>Home</li>
                 </Link>
-                <Link style={navStyle} to='/about'>
+                {/* <Link style={navStyle} to='/about'>
                     <li>About</li>
-                </Link>
-                <Link style={navStyle} to='/form'>
+                </Link> */}
+                <Link style={navStyle} to='/contact'>
                     <li>Get in Touch</li>
                 </Link>
 

@@ -10,11 +10,20 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
 
+const options = {
+    sizePerPageList: [{
+        text: '25', value: 25
+    }, {
+        text: '50', value: 50
+    }, {
+        text: '100', value: 100
+    }]
+}
 
 const columns = [{
     dataField: 'id',
     text: 'Product ID',
-    
+
 }, {
     dataField: 'first_name',
     text: 'First Name',
@@ -45,10 +54,10 @@ const columns = [{
 }];
 
 export default () =>
-    <BootstrapTable 
-    keyField='id' 
-    data={Data} 
-    columns={columns} 
-    filter={filterFactory()} 
-    pagination={paginationFactory()} 
-    cellEdit={ cellEditFactory({ mode: 'dbclick' }) }/>
+    <BootstrapTable
+        keyField='id'
+        data={Data}
+        columns={columns}
+        filter={filterFactory()}
+        pagination={paginationFactory(options)}
+        cellEdit={cellEditFactory({ mode: 'dbclick' })} />
