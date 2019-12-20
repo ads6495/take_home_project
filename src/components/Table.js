@@ -11,8 +11,6 @@ import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.m
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
 
 
-
-
 const columns = [{
     dataField: 'id',
     text: 'Product ID',
@@ -47,4 +45,10 @@ const columns = [{
 }];
 
 export default () =>
-    <BootstrapTable keyField='id' data={Data} columns={columns} filter={filterFactory()} pagination={paginationFactory()} cellEdit={ cellEditFactory({ mode: 'dbclick' }) }/>
+    <BootstrapTable 
+    keyField='id' 
+    data={Data} 
+    columns={columns} 
+    filter={filterFactory()} 
+    pagination={paginationFactory()} 
+    cellEdit={ cellEditFactory({ mode: 'dbclick' }) }/>
